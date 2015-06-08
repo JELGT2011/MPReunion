@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>MP Reunion Home</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="css/fullcalendar.min.css"/>
+    <link rel="stylesheet" href="css/application.css"/>
+</head>
+<body class="container-fluid">
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">MP Reunion</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <div class="nav pull-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="sign_up.html">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class=" container-fluid center-block">
+
+        <div class="container-fluid jumbotron center-block">
+
+            <div class="container-fluid row">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 inline">
+                    <img src="images/logo_badge.gif" alt="badge logo" height="128px" width="128px"/>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 inline">
+                    <h1 class="inline">Military Police Convention</h1>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 inline">
+                    <img src="images/logo_pistols.gif" alt="pistols logo" height="128px" width="128px"/>
+                </div>
+            </div>
+
+            <br/>
+            <br/>
+            <br/>
+
+            <p>
+                This is the Retired Military Police Association's annual reunion.  It is open to any active duty, retired, or former MPs.
+            </p>
+            <br/>
+
+            <p><a href="sign_up.html" class="btn btn-primary btn-lg bigbutton" role="button">Get Updates</a></p>
+            <br/>
+
+            <h2>What You Need To Know</h2>
+
+            <p>
+                Hotel reservations must be made by August 23rd to receive our discounted rate of $89 per night (You must state you are with RMPA).  No other fees; parking, wi-fi, etc are all included. *
+            </p>
+            <br/>
+
+            <address>
+                <strong>Clarion Suites</strong><br/>
+                17 Gateway Blvd. East<br/>
+                Savannah, Georgia 31419 <br/>
+                Phone: (912) 925-2700
+            </address>
+            <br/>
+
+            <p class="text-muted">
+                * You must be able to provide proof of service as an MP. Membership in an MP entity such as Retired MP Assoc, MP Regimental Assoc or other organization providing a member card is sufficient.  A DD214 will also serve as proof.  Contact us at watchdog19@hotmail.com for questions.
+            </p>
+
+        </div>
+
+        <div id="calendar"></div>
+        <br/>
+
+    </div>
+
+</div>
+
+<!-- jQuery v2.1.4 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- Bootstrap v3.3.4 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<script src="js/moment.min.js"></script>
+<script src="js/fullcalendar.min.js"></script>
+
+<script src="js/gcal.js"></script>
+
+<script>
+    $(document).ready(function() {
+
+        var calendar = $('#calendar').fullCalendar({
+
+            // yes I put my key in here.  It's a public key, don't worry.
+            googleCalendarApiKey: 'AIzaSyD6G4LvK2cny4avMa7UXA54avretrKItKY',
+            header: {
+                left: '',
+                center: '',
+                right: ''
+            },
+            defaultDate: moment('09 24 2015', 'MM DD YYYY'),
+            defaultView: 'agendaWeek',
+            allDaySlot: false,
+            firstDay: 3,
+            hiddenDays: [1, 2],
+            aspectRatio: 'auto',
+            minTime: '08:00:00',
+            maxTime: '22:00:00'
+        });
+
+        var google_calendar_feed = {
+            googleCalendarId: 'i02rgj1o4n2oqn1ru13206cubg@group.calendar.google.com',
+            color: '#337ab7'
+        };
+
+        calendar.fullCalendar('addEventSource', google_calendar_feed);
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>MP Reunion Sign Up</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="css/application.css"/>
+
+</head>
+<body class="container-fluid">
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">MP Reunion</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <div class="nav pull-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="sign_up.html">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<div class="container-fluid jumbotron center-block">
+    <form action="https://docs.google.com/forms/d/1YLKOHp0gW44uCcV8-2ofbPxJHiD1iU9rfeJOepSUjUA/formResponse" method="POST"
+          id="ss-form" target="_self" onsubmit="" class="form-horizontal">
+
+        <div class="row">
+            <div class="field">
+                <label for="entry_1024616160">Name:</label><br/>
+                <input type="text" name="entry.1024616160" value="" class="form-control" id="entry_1024616160" dir="auto"
+                       aria-label="Name:  " title="">
+            </div>
+        </div>
+        <br/>
+
+        <div class="row">
+            <div class="field">
+                <label for="entry_1903147143">Email Address:</label><br/>
+                <input type="text" name="entry.1903147143" value="" class="form-control" id="entry_1903147143" dir="auto"
+                       aria-label="Email Address:  " title="">
+            </div>
+        </div>
+        <br/>
+
+        <div class="row">
+            <div class="field">
+                <label for="entry_1389910970">Have you made your reservations with the Clarion Suites hotel?</label>
+            </div>
+
+            <label>
+                <input type="radio" name="entry.791156952" value="Yes" id="group_791156952_1" role="radio"
+                       class="ss-q-radio" aria-label="Yes">
+                Yes
+            </label>
+            <br/>
+            <label>
+                <input type="radio" name="entry.791156952" value="No" id="group_791156952_2" role="radio" class="ss-q-radio"
+                       aria-label="No">
+                No
+            </label>
+        </div>
+        <br/>
+
+        <div class="row">
+            <div class="field">
+                <label for="entry_2098340099">Number of attendees?</label>
+                <select name="entry.2098340099" id="entry_2098340099" aria-label="Number of attendees?  ">
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+        </div>
+        <br/>
+
+        <div class="row">
+            <div class="field">
+                <label for="entry_2124382497">What days do you plan on attending?</label>
+            </div>
+
+            <label>
+                <input type="checkbox" name="entry.496123305" value="Wednesday" id="group_496123305_1" role="checkbox"
+                       class="ss-q-checkbox">
+                Wednesday
+            </label>
+            <br/>
+            <label>
+                <input type="checkbox" name="entry.496123305" value="Thursday" id="group_496123305_2" role="checkbox"
+                       class="ss-q-checkbox">
+                Thursday
+            </label>
+            <br/>
+            <label>
+                <input type="checkbox" name="entry.496123305" value="Friday" id="group_496123305_3" role="checkbox"
+                       class="ss-q-checkbox">
+                Friday
+            </label>
+            <br/>
+            <label>
+                <input type="checkbox" name="entry.496123305" value="Saturday" id="group_496123305_4" role="checkbox"
+                       class="ss-q-checkbox">
+                Saturday
+            </label>
+            <br/>
+            <label>
+                <input type="checkbox" name="entry.496123305" value="Sunday" id="group_496123305_5" role="checkbox"
+                       class="ss-q-checkbox">
+                Sunday
+            </label>
+            <br/>
+        </div>
+        <br/>
+
+        <div class="row">
+            <div class="field">
+                <label for="entry_2104954104">MP Affiliation (e.g. Retired MP Association, MP Regimental Association, no
+                    affiliation, etc):</label>
+                <input type="text" name="entry.2104954104" value="" class="form-control" id="entry_2104954104" dir="auto"
+                       aria-label="MP Affiliation (e.g. Retired MP Association, MP Regimental Association, no affiliation, etc):  "
+                       title="">
+            </div>
+        </div>
+        <br/>
+
+        <div class="row">
+            <div class="field">
+                <label for="entry_366318500">
+                    Remarks/Questions/Comments (e.g. Dietary restrictions, medical needs, questions about the website, etc):
+                </label>
+            <textarea name="entry.366318500" rows="8" cols="0" class="form-control" id="entry_366318500" dir="auto"
+                      aria-label="Remarks/Questions/Comments (e.g. Dietary restrictions, medical needs, questions about the website, etc):  ">
+            </textarea>
+            </div>
+        </div>
+        <br/>
+
+        <button type="submit" name="submit" value="Submit" id="ss-submit" class="btn btn-primary btn-lg bigbutton">Submit</button>
+
+    </form>
+</div>
+
+<!-- jQuery v2.1.4 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- Bootstrap v3.3.4 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</body>
+</html>

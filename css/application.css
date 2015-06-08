@@ -1,0 +1,34 @@
+p {
+    font-size: 1.25em;
+    line-height: 125%;
+}
+
+address {
+    font-size: 1.25em;
+    line-height: 125%;
+}
+
+li {
+    font-size: 1.25em;
+    line-height: 125%;
+}
+
+.bigbutton {
+    width:500px;
+    padding: 8px 14px 10px;
+    border:1px solid #3e9cbf;
+    font-size:1.5em;
+}
+
+.fc-event {
+    font-size: 125%;
+}
+
+.text-muted {
+    font-size: 0.75em;
+    line-height: 100%;
+}
+
+.inline {
+    display: inline;
+}
